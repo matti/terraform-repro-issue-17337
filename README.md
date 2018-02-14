@@ -6,7 +6,9 @@ see [anymodule/main.tf] on how to toggle the bug
 
 Pass it first:
 
-    $ terraform init
-    $ terraform apply
+```
+$ terraform init
+$ terraform apply
+```
 
 Then edit the file and `apply` again
