@@ -9,9 +9,8 @@ output "on_destroy" {
 }
 
 data "local_file" "on_create" {
-  ## Enabling this triggers the bug
-  #depends_on = ["null_resource.wat"]
-  filename = "${path.module}/on_create.txt"
+  depends_on = ["null_resource.wat"]
+  filename   = "${path.module}/on_create.txt"
 }
 
 data "local_file" "on_destroy" {
